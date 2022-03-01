@@ -1,0 +1,548 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>智能阅卷 · 案管中心组件</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="huangchengjie">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="jzdr.html" />
+    
+    
+    <link rel="prev" href="zjcl.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../logs/logs.html">
+            
+                <a href="../logs/logs.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    起步
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../start/start.html">
+            
+                <a href="../start/start.html">
+            
+                    
+                    起步
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    组件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="zjcl.html">
+            
+                <a href="zjcl.html">
+            
+                    
+                    证据材料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="znyj.html">
+            
+                <a href="znyj.html">
+            
+                    
+                    智能阅卷
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="jzdr.html">
+            
+                <a href="jzdr.html">
+            
+                    
+                    卷宗导入
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >智能阅卷</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="1&#x667A;&#x80FD;&#x9605;&#x5377;&#x7EC4;&#x4EF6;">1.&#x667A;&#x80FD;&#x9605;&#x5377;&#x7EC4;&#x4EF6;</h1>
+<h3 id="11-&#x6982;&#x8FF0;">1.1 &#x6982;&#x8FF0;</h3>
+<p><strong>&#x529F;&#x80FD;&#xFF1A;&#x6DFB;&#x52A0;&#x6807;&#x6CE8;&#xFF08;&#x6846;&#x9009;&#x3001;&#x70B9;&#x51FB;&#xFF09;&#x3001;&#x68C0;&#x6D4B;&#x8BB0;&#x5F55;&#x3001;&#x4E00;&#x952E;&#x68C0;&#x6D4B;&#xFF08;&#x7B7E;&#x7AE0;&#x68C0;&#x6D4B;&#x3001;&#x637A;&#x5370;&#x68C0;&#x6D4B;&#x3001;&#x7B7E;&#x540D;&#x68C0;&#x6D4B;&#xFF09;&#x3001;&#x5BA1;&#x67E5;&#x7ED3;&#x679C;&#x3001;&#x5B9A;&#x4F4D;&#xFF08;&#x76EE;&#x5F55;&#x6811;&#x5B9A;&#x4F4D;&#x3001;&#x9875;&#x7801;&#x5B9A;&#x4F4D;&#x3001;&#x6807;&#x6CE8;&#x5B9A;&#x4F4D;&#xFF09;&#x3001;&#x56FE;&#x7247;&#x6253;&#x5370;&#x3001;&#x56FE;&#x7247;&#x65CB;&#x8F6C;&#x3001;&#x6DFB;&#x52A0;&#x4E66;&#x7B7E;&#x3001;&#x7B80;&#x6D01;&#x6A21;&#x5F0F;&#x3001;&#x95EE;&#x9898;&#x9875;&#x3001;&#x6211;&#x7684;&#x4E66;&#x7B7E;&#x3001;&#x76EE;&#x5F55;&#x6811;&#x641C;&#x7D22;&#x3001;&#x62A4;&#x773C;&#x6A21;&#x5F0F;&#x3001;&#x6750;&#x6599;&#x5BF9;&#x6BD4;&#xFF08;&#x53CC;&#x5C4F;&#x3001;&#x56DB;&#x5C4F;&#xFF09;&#x3001;&#x6A2A;&#x5411;&#x9605;&#x8BFB;&#x3001;&#x5355;&#x9875;&#x6A21;&#x5F0F;&#x3001;&#x591A;&#x9875;&#x6A21;&#x5F0F;&#x3001;&#x5168;&#x5C4F;&#x663E;&#x793A;&#x3001;&#x7FFB;&#x4E66;&#x9605;&#x5377;&#x6A21;&#x5F0F;&#x3001;&#x5BBD;&#x9AD8;&#x591A;&#x6BD4;&#x4F8B;&#x5339;&#x914D;&#xFF0C;&#x62D6;&#x52A8;&#x7F29;&#x653E;&#x5339;&#x914D;&#x7B49;&#x529F;&#x80FD;</strong></p>
+<h3 id="12-&#x5B89;&#x88C5;">1.2 &#x5B89;&#x88C5;</h3>
+<pre><code class="lang-cmd">    npm i ims-proof-material
+</code></pre>
+<h3 id="13-&#x7EC4;&#x4EF6;&#x5C5E;&#x6027;">1.3 &#x7EC4;&#x4EF6;&#x5C5E;&#x6027;</h3>
+<p><strong>props</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>&#x5C5E;&#x6027;</strong></th>
+<th style="text-align:left"><strong>&#x8BF4;&#x660E;</strong></th>
+<th style="text-align:left"><strong>&#x5FC5;&#x586B;</strong></th>
+<th style="text-align:left"><strong>&#x7C7B;&#x578B;</strong></th>
+<th style="text-align:left"><strong>&#x9ED8;&#x8BA4;&#x503C;</strong></th>
+<th style="text-align:left"><strong>&#x6700;&#x4F4E;&#x7248;&#x672C;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ajbh</td>
+<td style="text-align:left">&#x6848;&#x4EF6;&#x7F16;&#x53F7;</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">1.0.7</td>
+</tr>
+<tr>
+<td style="text-align:left">ajmc</td>
+<td style="text-align:left">&#x6848;&#x4EF6;&#x540D;&#x79F0;</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">1.0.7</td>
+</tr>
+<tr>
+<td style="text-align:left">intelMarkingType</td>
+<td style="text-align:left">&#x7C7B;&#x578B;</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">agzx</td>
+<td style="text-align:left">1.0.7</td>
+</tr>
+<tr>
+<td style="text-align:left">showAddCallouts</td>
+<td style="text-align:left">&#x6DFB;&#x52A0;&#x6807;&#x6CE8;</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">1.0.9</td>
+</tr>
+<tr>
+<td style="text-align:left">showInspectionRecord</td>
+<td style="text-align:left">&#x68C0;&#x6D4B;&#x8BB0;&#x5F55;</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">1.0.9</td>
+</tr>
+<tr>
+<td style="text-align:left">showOneClickDetection</td>
+<td style="text-align:left">&#x4E00;&#x952E;&#x68C0;&#x6D4B;</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">1.0.9</td>
+</tr>
+<tr>
+<td style="text-align:left">showOtherDetection</td>
+<td style="text-align:left">&#x7B7E;&#x540D;&#x3001;&#x7B7E;&#x7AE0;&#x3001;&#x637A;&#x5370;&#x68C0;&#x6D4B;</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">1.0.9</td>
+</tr>
+<tr>
+<td style="text-align:left">showMaterialComparison</td>
+<td style="text-align:left">&#x6750;&#x6599;&#x6BD4;&#x5BF9;</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">1.0.9</td>
+</tr>
+<tr>
+<td style="text-align:left">showLookLeftAndWriteRight</td>
+<td style="text-align:left">&#x5DE6;&#x770B;&#x53F3;&#x5199;</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">1.0.9</td>
+</tr>
+<tr>
+<td style="text-align:left">showRightMkList</td>
+<td style="text-align:left">&#x53F3;&#x4FA7;&#x6807;&#x6CE8;&#x5217;&#x8868;</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">1.0.9</td>
+</tr>
+<tr>
+<td style="text-align:left">showReviewResults</td>
+<td style="text-align:left">&#x5BA1;&#x67E5;&#x7ED3;&#x679C;</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">1.0.9</td>
+</tr>
+<tr>
+<td style="text-align:left">showSplitScreenComparison</td>
+<td style="text-align:left">&#x5206;&#x5C4F;&#x6BD4;&#x5BF9;&#x6309;&#x94AE;</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">1.0.9</td>
+</tr>
+<tr>
+<td style="text-align:left">showQuestionPage</td>
+<td style="text-align:left">&#x95EE;&#x9898;&#x9875;</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">1.0.9</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-js">    <span class="hljs-comment">// &#x667A;&#x80FD;&#x9605;&#x5377;&#x7EC4;&#x4EF6; intelMarkingType&#xFF1A;agzx(&#x9ED8;&#x8BA4;&#x503C;)&#x3001;zfkp&#x3001;icp</span>
+    &lt;InterMark :ajbh=<span class="hljs-string">&quot;ajbh&quot;</span> :ajmc=<span class="hljs-string">&quot;ajmc&quot;</span> 
+    :intelMarkingType=<span class="hljs-string">&quot;intelMarkingType&quot;</span> 
+    :showInspectionRecord=<span class="hljs-string">&quot;showInspectionRecord&quot;</span>
+    :showOneClickDetection=<span class="hljs-string">&quot;showOneClickDetection&quot;</span>
+    :showOtherDetection=<span class="hljs-string">&quot;showOtherDetection&quot;</span>
+    :showMaterialComparison=<span class="hljs-string">&quot;showMaterialComparison&quot;</span>
+    :showLookLeftAndWriteRight=<span class="hljs-string">&quot;showLookLeftAndWriteRight&quot;</span>
+    :showRightMkList=<span class="hljs-string">&quot;showRightMkList&quot;</span>
+    :showReviewResults=<span class="hljs-string">&quot;showReviewResults&quot;</span>
+    :showSplitScreenComparison=<span class="hljs-string">&quot;showSplitScreenComparison&quot;</span>
+    :showQuestionPage=<span class="hljs-string">&quot;showQuestionPage&quot;</span>
+    :showAddCallouts=<span class="hljs-string">&quot;showAddCallouts&quot;</span> /&gt;
+</code></pre>
+<p><strong>events</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>&#x4E8B;&#x4EF6;&#x540D;</strong></th>
+<th style="text-align:left"><strong>&#x8BF4;&#x660E;</strong></th>
+<th style="text-align:left"><strong>&#x8FD4;&#x56DE;&#x503C;</strong></th>
+<th style="text-align:left"><strong>&#x6700;&#x4F4E;&#x7248;&#x672C;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x5F85;&#x5B9A;</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="14-&#x4EE3;&#x7801;&#x793A;&#x4F8B;">1.4 &#x4EE3;&#x7801;&#x793A;&#x4F8B;</h3>
+<blockquote>
+<p>&#x5168;&#x5C40;&#x5F15;&#x7528;&#xFF1A;&#x5728;main.js&#x4E2D;&#x914D;&#x7F6E;&#x8BC1;&#x636E;&#x6750;&#x6599;&#x7EC4;&#x4EF6;&#x5F15;&#x7528;</p>
+</blockquote>
+<pre><code class="lang-js">    <span class="hljs-comment">// main.js</span>
+    <span class="hljs-keyword">import</span> {InterMark} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;ims-proof-material&apos;</span>;
+    Vue.use(InterMark);
+
+    <span class="hljs-comment">// test.vue</span>
+    &lt;InterMark :ajbh=<span class="hljs-string">&quot;ajbh&quot;</span> :ajmc=<span class="hljs-string">&quot;ajmc&quot;</span> 
+    :intelMarkingType=<span class="hljs-string">&quot;intelMarkingType&quot;</span> 
+    :showInspectionRecord=<span class="hljs-string">&quot;showInspectionRecord&quot;</span>
+    :showOneClickDetection=<span class="hljs-string">&quot;showOneClickDetection&quot;</span>
+    :showOtherDetection=<span class="hljs-string">&quot;showOtherDetection&quot;</span>
+    :showMaterialComparison=<span class="hljs-string">&quot;showMaterialComparison&quot;</span>
+    :showLookLeftAndWriteRight=<span class="hljs-string">&quot;showLookLeftAndWriteRight&quot;</span>
+    :showRightMkList=<span class="hljs-string">&quot;showRightMkList&quot;</span>
+    :showReviewResults=<span class="hljs-string">&quot;showReviewResults&quot;</span>
+    :showSplitScreenComparison=<span class="hljs-string">&quot;showSplitScreenComparison&quot;</span>
+    :showQuestionPage=<span class="hljs-string">&quot;showQuestionPage&quot;</span>
+    :showAddCallouts=<span class="hljs-string">&quot;showAddCallouts&quot;</span> /&gt;
+</code></pre>
+<blockquote>
+<p>&#x5C40;&#x90E8;&#x5F15;&#x7528;&#xFF1A;&#x5728;&#x5F15;&#x7528;&#x6A21;&#x5757;&#x4E2D;&#x5F15;&#x7528;</p>
+</blockquote>
+<pre><code class="lang-js">    <span class="hljs-comment">// test.vue</span>
+    &lt;template&gt;
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">InterMark</span> <span class="hljs-attr">:ajbh</span>=<span class="hljs-string">&quot;ajbh&quot;</span> <span class="hljs-attr">:ajmc</span>=<span class="hljs-string">&quot;ajmc&quot;</span> 
+        <span class="hljs-attr">:intelMarkingType</span>=<span class="hljs-string">&quot;intelMarkingType&quot;</span> 
+        <span class="hljs-attr">:showInspectionRecord</span>=<span class="hljs-string">&quot;showInspectionRecord&quot;</span>
+        <span class="hljs-attr">:showOneClickDetection</span>=<span class="hljs-string">&quot;showOneClickDetection&quot;</span>
+        <span class="hljs-attr">:showOtherDetection</span>=<span class="hljs-string">&quot;showOtherDetection&quot;</span>
+        <span class="hljs-attr">:showMaterialComparison</span>=<span class="hljs-string">&quot;showMaterialComparison&quot;</span>
+        <span class="hljs-attr">:showLookLeftAndWriteRight</span>=<span class="hljs-string">&quot;showLookLeftAndWriteRight&quot;</span>
+        <span class="hljs-attr">:showRightMkList</span>=<span class="hljs-string">&quot;showRightMkList&quot;</span>
+        <span class="hljs-attr">:showReviewResults</span>=<span class="hljs-string">&quot;showReviewResults&quot;</span>
+        <span class="hljs-attr">:showSplitScreenComparison</span>=<span class="hljs-string">&quot;showSplitScreenComparison&quot;</span>
+        <span class="hljs-attr">:showQuestionPage</span>=<span class="hljs-string">&quot;showQuestionPage&quot;</span>
+        <span class="hljs-attr">:showAddCallouts</span>=<span class="hljs-string">&quot;showAddCallouts&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span></span>
+    <span class="hljs-keyword">import</span> {InterMark} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;ims-proof-material&apos;</span>;
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        components:{
+            InterMark
+        }
+    }
+</code></pre>
+<h3 id="15-&#x7EC4;&#x4EF6;&#x622A;&#x56FE;">1.5 &#x7EC4;&#x4EF6;&#x622A;&#x56FE;</h3>
+<p><img src="images/znyj.png" alt="&#x667A;&#x80FD;&#x9605;&#x5377;"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="zjcl.html" class="navigation navigation-prev " aria-label="Previous page: 证据材料">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="jzdr.html" class="navigation navigation-next " aria-label="Next page: 卷宗导入">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"智能阅卷","level":"1.4.2","depth":2,"next":{"title":"卷宗导入","level":"1.4.3","depth":2,"path":"components/jzdr.md","ref":"./components/jzdr.md","articles":[]},"previous":{"title":"证据材料","level":"1.4.1","depth":2,"path":"components/zjcl.md","ref":"./components/zjcl.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"huangchengjie","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"案管中心组件","language":"zh-hans","gitbook":"*","description":"案管中心组件"},"file":{"path":"components/znyj.md","mtime":"2022-02-28T07:37:32.785Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-28T08:04:22.474Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
